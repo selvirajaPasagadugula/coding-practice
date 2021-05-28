@@ -10,17 +10,13 @@ import math
 n = int(input("Enter the Integer value(n): "))
 
 def complement():
-    #convert given int to bin
     n_bin = bin(n)
     print('n in Binary form:',n_bin)
     n_bin_cmpl = ''
-    for digit in n_bin[::-1]:
-        if digit=='b':
-            break
-        else:
-            n_bin_cmpl += '0' if digit== '1' else '1'
-
-    print('n\'s Binary complement: ',n_bin_cmpl)
+    for digit in n_bin.split('b')[1]:
+            n_bin_cmpl += '0' if digit=='1' else '1'
+    
+    print('n Binary complement: ',n_bin_cmpl)
 
     n_int = 0
     i =0
