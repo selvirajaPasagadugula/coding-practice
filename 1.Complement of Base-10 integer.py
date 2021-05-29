@@ -14,7 +14,7 @@ def complement():
     print('n in Binary form:',n_bin)
     n_bin_cmpl = ''
     for digit in n_bin.split('b')[1]:
-            n_bin_cmpl += '0' if digit=='1' else '1'
+            n_bin_cmpl+='0' if digit=='1' else '1'
     
     print('n Binary complement: ',n_bin_cmpl)
 
